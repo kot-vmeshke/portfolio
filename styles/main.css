@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000000;
   color: #ffffff;
@@ -18,6 +22,11 @@ body {
   background: url("../assets/img/hero-bg.jpg") no-repeat center 0;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo:hover {
   filter: invert(29%) sepia(39%) saturate(251%) hue-rotate(7deg) brightness(90%) contrast(93%);
 }
@@ -29,6 +38,7 @@ body {
   display: flex;
   list-style: none;
   padding: 0 30px;
+  margin: 0;
 }
 .header-nav__item:not(:last-child) {
   margin-right: 30px;
@@ -68,4 +78,218 @@ body {
 }
 .language-active {
   color: #BDAE82;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.hero-section {
+  background: url("../assets/img/hero-bg.jpg") no-repeat center -90px;
+  padding: 160px 80px 280px;
+}
+
+.hero-title {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120px;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  max-width: 470px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: block;
+  width: 220px;
+  height: 55px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+}
+.btn:hover {
+  color: #ffffff;
+}
+
+.btn-fill {
+  background: #BDAE82;
+  color: #000000;
+}
+
+.btn-outline {
+  background: #000000;
+  color: #BDAE82;
+  outline: 2px solid #BDAE82;
+  outline-offset: -2px;
+}
+
+.title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+  margin: 0 auto 60px;
+}
+
+.section-title {
+  display: inline-block;
+  position: relative;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #BDAE82;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+.skills-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.skills-items .skill {
+  max-width: 320px;
+}
+.skills-items .skill.digital {
+  background: url("../assets/svg/camera.svg") no-repeat center top;
+}
+.skills-items .skill.video {
+  background: url("../assets/svg/video.svg") no-repeat center top;
+}
+.skills-items .skill.retouch {
+  background: url("../assets/svg/image.svg") no-repeat center top;
+}
+.skills-items .skill.audio {
+  background: url("../assets/svg/audio.svg") no-repeat center top;
+}
+.skills-items .skill-title {
+  margin: 100px 0 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+.skills-items .skill-description {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.buttons-wrap {
+  max-width: 895px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 auto 60px;
+}
+
+.image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.video-wrap {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video-btn {
+  display: block;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  z-index: 100;
+  background: url("../assets/svg/Play_btn.svg") no-repeat center/contain;
+  border: none;
+  cursor: pointer;
+}
+.video-btn:hover {
+  filter: invert(29%) sepia(39%) saturate(251%) hue-rotate(7deg) brightness(90%) contrast(93%);
+}
+
+.price-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.price-item {
+  width: 100%;
+  max-width: 450px;
+  padding: 43px;
+  border: 3px solid #BDAE82;
+}
+.price-item .btn {
+  margin: 0 auto;
+}
+
+.price-title {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #BDAE82;
+}
+
+.price-description {
+  margin-bottom: 40px;
+}
+.price-description span {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
