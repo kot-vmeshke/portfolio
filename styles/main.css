@@ -1,0 +1,71 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("../assets/img/hero-bg.jpg") no-repeat center 0;
+}
+
+.logo:hover {
+  filter: invert(29%) sepia(39%) saturate(251%) hue-rotate(7deg) brightness(90%) contrast(93%);
+}
+
+.header-nav {
+  margin-left: auto;
+}
+.header-nav__list {
+  display: flex;
+  list-style: none;
+  padding: 0 30px;
+}
+.header-nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-nav__link {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header-nav__link:hover {
+  color: #BDAE82;
+}
+
+.language {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.language span {
+  cursor: pointer;
+}
+.language span:hover {
+  color: #BDAE82;
+}
+.language .english {
+  margin-right: 10px;
+}
+.language .russian {
+  margin-left: 10px;
+}
+.language-active {
+  color: #BDAE82;
+}/*# sourceMappingURL=main.css.map */
