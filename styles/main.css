@@ -220,11 +220,15 @@ body {
 }
 
 .video-wrap {
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.video-wrap video {
+  width: 100%;
 }
 
 .video-btn {
@@ -292,4 +296,135 @@ body {
   font-size: 18px;
   line-height: 36px;
   text-align: center;
+}
+
+.contacts-section {
+  background: url("../assets/img/contacts-bg.jpg") no-repeat center/cover;
+  margin-top: 100px;
+  padding: 60px 20px 195px;
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+}
+
+.contacts-title {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.contacts-container {
+  width: 450px;
+}
+
+.contacts-input {
+  display: block;
+  padding: 5px 20px;
+  background: transparent;
+  border: 2px solid #BDAE82;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.contacts-input:nth-child(3) {
+  height: 100px;
+  margin-bottom: 30px;
+}
+.contacts-input::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  color: #bdae82;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.contacts-input:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  color: #bdae82;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.contacts-input::placeholder {
+  font-family: "Inter", sans-serif;
+  color: #bdae82;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+.footer-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container a:hover {
+  color: #BDAE82;
+}
+
+.copy {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+}
+
+.rss {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.socials-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 188px;
+  padding: 0;
+}
+
+.socials-list__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-position: center;
+}
+.socials-list__link:hover {
+  filter: invert(29%) sepia(39%) saturate(251%) hue-rotate(7deg) brightness(90%) contrast(93%);
+}
+
+.instagram {
+  background-image: url("../assets/svg/instagram.svg");
+}
+
+.facebook {
+  background-image: url("../assets/svg/fb.svg");
+}
+
+.twitter {
+  background-image: url("../assets/svg/twitter.svg");
+}
+
+.pinterest {
+  background-image: url("../assets/svg/pinterest.svg");
 }/*# sourceMappingURL=main.css.map */
