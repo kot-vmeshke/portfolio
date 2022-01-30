@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="shortcut icon" href="./assets/img/logo_hover.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./styles/normalize.css">
+  <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,13 @@
           <li class="header-nav__item"><a href="#contacts" class="header-nav__link">Contacts</a></li>
         </ul>
       </nav>
-      <div class="language"><span class="english language-active">en</span>/<span class="russian">ru</span></div>
+      <div class="language">
+        <span class="english language-active">en</span>
+        /
+        <span class="russian">ru</span>
+      </div>
+      <button class="menu-open"></button>
+      <button class="menu-close"></button>
     </div>
   </header>
   <main>
@@ -142,7 +148,7 @@
             <input class="contacts-input" type="email" name="email" id="email" placeholder="E-mail">
             <input class="contacts-input" type="tel" name="phone" id="phone" placeholder="Phone">
             <textarea class="contacts-input" name="message" id="message" placeholder="Message"></textarea>
-            <button type="submit"class="btn btn-fill">Send message</button>
+            <button type="submit" class="btn btn-fill">Send message</button>
           </form>
       </div>
     </section>
