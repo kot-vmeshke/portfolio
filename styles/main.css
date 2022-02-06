@@ -543,6 +543,34 @@ body {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+.contacts-input:focus {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
+}
+.contacts-input:not(:-moz-placeholder-shown) {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
+}
+.contacts-input:not(:-ms-input-placeholder) {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
+}
+.contacts-input:not(:placeholder-shown) {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
 }
 .contacts-input:nth-child(3) {
   height: 100px;

@@ -74,18 +74,18 @@
           <h2 class="section-title">Portfolio</h2>
         </div>
         <div class="buttons-wrap">
-          <button class="btn btn-outline">Winter</button>
-          <button class="btn btn-outline">Spring</button>
-          <button class="btn btn-outline">Summer</button>
-          <button class="btn btn-fill">Autumn</button>
+          <button class="btn btn-outline" data-season="winter">Winter</button>
+          <button class="btn btn-outline" data-season="spring">Spring</button>
+          <button class="btn btn-outline" data-season="summer">Summer</button>
+          <button class="btn btn-fill" data-season="autumn">Autumn</button>
         </div>
         <div class="image-wrap">
-          <img src="./assets/img/portfolio/portfolio-img-1.jpg" alt="portfolio-img" class="portfolio-img">
-          <img src="./assets/img/portfolio/portfolio-img-3.jpg" alt="portfolio-img" class="portfolio-img">
-          <img src="./assets/img/portfolio/portfolio-img-4.jpg" alt="portfolio-img" class="portfolio-img">
-          <img src="./assets/img/portfolio/portfolio-img-5.jpg" alt="portfolio-img" class="portfolio-img">
-          <img src="./assets/img/portfolio/portfolio-img-2.jpg" alt="portfolio-img" class="portfolio-img">
-          <img src="./assets/img/portfolio/portfolio-img-6.jpg" alt="portfolio-img" class="portfolio-img">
+          <img src="./assets/img/autumn/1.jpg" alt="portfolio-img" class="portfolio-img">
+          <img src="./assets/img/autumn/2.jpg" alt="portfolio-img" class="portfolio-img">
+          <img src="./assets/img/autumn/3.jpg" alt="portfolio-img" class="portfolio-img">
+          <img src="./assets/img/autumn/4.jpg" alt="portfolio-img" class="portfolio-img">
+          <img src="./assets/img/autumn/5.jpg" alt="portfolio-img" class="portfolio-img">
+          <img src="./assets/img/autumn/6.jpg" alt="portfolio-img" class="portfolio-img">
         </div>
       </section>
       <section class="section" id="video">
@@ -144,10 +144,10 @@
     <section class="section contacts-section" id="contacts">
       <div class="contacts-container">
           <h2 class="section-title contacts-title">Contact me</h2>
-          <form action="#" class="contacts-form">
-            <input class="contacts-input" type="email" name="email" id="email" placeholder="E-mail">
-            <input class="contacts-input" type="tel" name="phone" id="phone" placeholder="Phone">
-            <textarea class="contacts-input" name="message" id="message" placeholder="Message"></textarea>
+          <form action="#" class="contacts-form" metod="post" autocomplete="off">
+            <input required class="contacts-input" type="email" name="email" id="email" placeholder="E-mail">
+            <input required class="contacts-input" type="tel" name="phone" id="phone" placeholder="Phone">
+            <textarea required maxlength="150" class="contacts-input" name="message" id="message" placeholder="Message"></textarea>
             <button type="submit" class="btn btn-fill">Send message</button>
           </form>
       </div>
