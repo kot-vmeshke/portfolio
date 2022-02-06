@@ -13,6 +13,157 @@ body {
   color: #ffffff;
   font-family: "Inter", sans-serif;
 }
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.light-theme .header-container {
+  background: url("../assets/img/hero-bg-light.jpg") no-repeat left 0;
+}
+@media (min-width: 1441px) {
+  body.light-theme .header-container {
+    background: url("../assets/img/hero-bg-light.jpg") no-repeat center 0;
+  }
+}
+@media (max-width: 992px) {
+  body.light-theme .header-container {
+    background: url("../assets/img/hero-bg-light.jpg") no-repeat left 0;
+  }
+}
+@media (max-width: 680px) {
+  body.light-theme .header-container {
+    background: url("../assets/img/hero-bg-light.jpg") no-repeat center 0;
+  }
+}
+body.light-theme .logo {
+  filter: invert(100%);
+}
+body.light-theme .header-nav__link {
+  color: #000000;
+}
+body.light-theme .language {
+  color: #000000;
+}
+body.light-theme .language-active {
+  color: #ffffff;
+}
+body.light-theme .hero-section {
+  background: url("../assets/img/hero-bg-light.jpg") no-repeat left -90px;
+}
+@media (min-width: 1441px) {
+  body.light-theme .hero-section {
+    background: url("../assets/img/hero-bg-light.jpg") no-repeat center -90px;
+  }
+}
+@media (max-width: 992px) {
+  body.light-theme .hero-section {
+    background: url("../assets/img/hero-bg-light.jpg") no-repeat left -100px;
+  }
+}
+@media (max-width: 680px) {
+  body.light-theme .hero-section {
+    background: url("../assets/img/hero-bg-light.jpg") no-repeat center -100px;
+  }
+}
+body.light-theme .hero-section .btn {
+  background: #ffffff;
+  color: #000000;
+}
+body.light-theme .hero-section .btn:hover {
+  background-color: #000000;
+  color: #BDAE82;
+}
+body.light-theme .title-wrap {
+  background-image: linear-gradient(to top, #ffffff 39px, #000000 39px, #000000 41px, #ffffff 41px);
+}
+body.light-theme .section-title {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.light-theme .btn-fill {
+  background: #000000;
+  color: #BDAE82;
+}
+body.light-theme .btn-fill:hover {
+  color: #ffffff;
+}
+body.light-theme .btn-outline {
+  background: #BDAE82;
+  color: #000000;
+}
+body.light-theme .btn-outline:hover {
+  color: #ffffff;
+}
+body.light-theme .contacts-section {
+  background: url("../assets/img/contacts-bg-light.jpg") no-repeat center/cover;
+}
+body.light-theme .contacts-section button[type=submit] {
+  background: #ffffff;
+  color: #000000;
+}
+body.light-theme .contacts-section button[type=submit]:hover {
+  background-color: #000000;
+  color: #BDAE82;
+}
+body.light-theme .contacts-title {
+  background: transparent;
+}
+body.light-theme .contacts-input {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.5);
+}
+body.light-theme .contacts-input:focus {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 2px solid #BDAE82;
+}
+body.light-theme .contacts-input:not(:-moz-placeholder-shown) {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 2px solid #BDAE82;
+}
+body.light-theme .contacts-input:not(:-ms-input-placeholder) {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 2px solid #BDAE82;
+}
+body.light-theme .contacts-input:not(:placeholder-shown) {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 2px solid #BDAE82;
+}
+body.light-theme .contacts-input::-moz-placeholder {
+  color: #000000;
+}
+body.light-theme .contacts-input:-ms-input-placeholder {
+  color: #000000;
+}
+body.light-theme .contacts-input::placeholder {
+  color: #000000;
+}
+body.light-theme .footer-container a {
+  text-decoration: none;
+  color: #000000;
+}
+body.light-theme .footer-container a:hover {
+  color: #BDAE82;
+}
+body.light-theme .socials-list__link {
+  filter: invert(100%);
+}
+body.light-theme .socials-list__link:hover {
+  filter: invert(29%) sepia(39%) saturate(251%) hue-rotate(7deg) brightness(90%) contrast(93%);
+}
+
+.theme {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: transparent url(../assets/svg/btn-light.svg) no-repeat center/contain;
+  border: none;
+  margin-left: 35px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.theme:hover {
+  filter: invert(29%) sepia(39%) saturate(251%) hue-rotate(7deg) brightness(90%) contrast(93%);
+}
 
 .container {
   max-width: 1440px;
@@ -80,7 +231,7 @@ body {
 .header-nav__link:hover {
   color: #BDAE82;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-nav {
     display: none;
   }
@@ -118,7 +269,7 @@ body {
   line-height: 50px;
   color: #ffffff;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .language {
     margin-left: auto;
     margin-right: 30px;
@@ -163,7 +314,7 @@ body {
   cursor: pointer;
   border: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .menu-open {
     display: block;
   }
@@ -172,7 +323,7 @@ body {
 .section {
   padding-top: 100px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .section {
     padding-top: 80px;
   }
@@ -275,7 +426,7 @@ body {
   background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
   margin: 0 auto 60px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .title-wrap {
     margin: 0 auto 36px;
     width: 80%;
@@ -296,7 +447,7 @@ body {
   margin: 0 auto;
   background-color: #000000;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .section-title {
     font-size: 32px;
     line-height: 80px;
@@ -401,7 +552,7 @@ body {
 .video-wrap video {
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .video-wrap {
     margin: 0 -20px;
   }
@@ -420,7 +571,7 @@ body {
 .video-btn:hover {
   filter: invert(29%) sepia(39%) saturate(251%) hue-rotate(7deg) brightness(90%) contrast(93%);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .video-btn {
     width: 75px;
     height: 75px;
@@ -505,7 +656,7 @@ body {
   align-items: start;
   justify-content: flex-end;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contacts-section {
     padding: 60px 20px 111px;
     display: flex;
@@ -520,7 +671,7 @@ body {
   margin: 0;
   margin-bottom: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contacts-title {
     display: block;
   }
@@ -529,7 +680,7 @@ body {
 .contacts-container {
   width: 450px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contacts-container button {
     margin: 0 auto;
   }
@@ -618,7 +769,7 @@ body {
 .footer-container a:hover {
   color: #BDAE82;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .footer-container {
     flex-direction: column;
   }

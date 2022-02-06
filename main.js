@@ -190,7 +190,23 @@ const internationalization = () => {
     getTranslate(event.target.dataset.language);
   })
 }
+//theme
+const changeTheme = () => {
+  const btn = document.querySelector('.theme');
+  const body = document.querySelector('body');
 
+  btn.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    if (body.classList.contains('light-theme')) {
+      btn.style.background = 'transparent url(../assets/svg/btn-dark.svg) no-repeat center / contain';
+    }
+    if (!body.classList.contains('light-theme')) {
+      btn.style.background = 'transparent url(../assets/svg/btn-light.svg) no-repeat center / contain';
+    }
+  })
+}
+
+changeTheme();
 internationalization();
 changeImg();
 openMenu();
