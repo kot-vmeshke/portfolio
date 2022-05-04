@@ -8,6 +8,7 @@ const openMenu = () => {
   const close = () => {
     headerNav.classList.remove('adaptive-nav');
     menuClose.style.display = 'none';
+    document.body.style.overflow = '';
     document.removeEventListener('keydown', (event) => {
       if (event.key === ('Escape' || 'Esc')) {
         event.preventDefault();
@@ -19,6 +20,7 @@ const openMenu = () => {
   const open = () => {
     headerNav.classList.add('adaptive-nav');
     menuClose.style.display = 'block';
+    document.body.style.overflow = 'hidden';
     document.addEventListener('keydown', (event) => {
       if (event.key === ('Escape' || 'Esc')) {
         event.preventDefault();
