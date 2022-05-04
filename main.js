@@ -200,10 +200,10 @@ const changeTheme = () => {
   btn.addEventListener('click', () => {
     body.classList.toggle('light-theme');
     if (body.classList.contains('light-theme')) {
-      btn.style.background = 'transparent url(../assets/svg/btn-dark.svg) no-repeat center / contain';
+      btn.style.background = 'transparent url(./assets/svg/btn-dark.svg) no-repeat center / contain';
     }
     if (!body.classList.contains('light-theme')) {
-      btn.style.background = 'transparent url(../assets/svg/btn-light.svg) no-repeat center / contain';
+      btn.style.background = 'transparent url(./assets/svg/btn-light.svg) no-repeat center / contain';
     }
   })
 }
